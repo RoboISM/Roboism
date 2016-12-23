@@ -44,29 +44,21 @@ Follow the rules, bad code will be rejected, or modified and credit denied. Yes,
   For Window Users:- ```myvenv\Scripts\activate```<br>
   For Linux Users and OS X Users:-
   ```source myvenv/bin/activate``` <br>
-  Now, you should see a (myvenv) script before cmd commands. <br>
 
-* Next, check updates (if any) for pip module by
-  ```pip install --upgrade pip```
+* ```pip install --upgrade pip```
 
-* After that, do
-  ```pip install django```
+* ```pip install django```
   
-* Next, do 
-  ```pip install django_extensions```
+* ```pip install django_extensions```
   
-* After that, do
-  ```pip install Pillow```
+* ```pip install Pillow```
 
 * After installation is complete, do
-  ```python manage.py makemigrations mainsite```
-  And 
+  ```python manage.py makemigrations mainsite``` 
   ```python manage.py migrate mainsite```
-  And
   ```python manage.py collectstatic```
 
-* Finally, to run a virtual server, do
-  ```python manage.py runserver```
+* ```python manage.py runserver```
   Go to any browser, type this url '127.0.0.1:8000' without quotes. If everything went as planned, you will see the site       locally. <br>
   
 * For accessing/modifying users and other data, do 
