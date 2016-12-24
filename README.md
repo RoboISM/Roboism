@@ -34,7 +34,7 @@ Follow the rules, bad code will be rejected, or modified and credit denied. Yes,
 * Clone your code into your PC. Let the folder name be Roboism. 
 * Install python 3 in your PC. Preferably in default directory (C:/)
 * delete Roboism/myvenv folder
-* Open Command Prompt and cd into the directory (Roboism). <br>
+* Open Command Prompt/Terminal and cd into the directory (Roboism). <br>
   For Window Users:-
   ```C:\Python34\python -m venv myvenv```<br>
   For Linux Users and OS X Users:-
@@ -44,21 +44,24 @@ Follow the rules, bad code will be rejected, or modified and credit denied. Yes,
   For Window Users:- ```myvenv\Scripts\activate```<br>
   For Linux Users and OS X Users:-
   ```source myvenv/bin/activate``` <br>
-  Now, you should see a (myvenv) script before cmd commands. <br>
 
-* Now, do
-  ```pip install django==1.9.7```
+* ```pip install --upgrade pip```
+
+* ```pip install django```
+  
+* ```pip install django_extensions```
+  
+* ```pip install Pillow```
 
 * After installation is complete, do
-  ```python manage.py makemigration mainsite```
-  And 
+  ```python manage.py makemigrations mainsite``` 
   ```python manage.py migrate mainsite```
-  And
   ```python manage.py collectstatic```
 
-* Finally, to run a virtual server, do
-  ```python manage.py runserver```
-  Go to any browser, type this url '127.0.0.1:8000' without quotes. If everything went as planned, you will see the site locally. <br>
-  Make any changes the code and see the change reflected on the locally hosted site. 
-
-
+* ```python manage.py runserver```
+  Go to any browser, type this url '127.0.0.1:8000' without quotes. If everything went as planned, you will see the site       locally. <br>
+  
+* For accessing/modifying users and other data, do 
+  ```python manage.py createsuperuser``` and input onscreen details to create a superuser account followed by opening           '127.0.0.1:8000/admin/' in a browser window without quotes and logging in with the newly made superuser.
+  
+* Make any changes to the code and see the change reflected on the locally hosted site. 
