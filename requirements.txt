@@ -1,2 +1,4 @@
 Pillow
 django==1.9.7
+django-widget-tweaks
+django-extensions
